@@ -6,6 +6,7 @@
 
 ## 説明
 日吉駅の繁華街（通称：ひようら）にある、おすすめの飲食店を紹介してくれるLINE Bot
+スライドは[こちら](https://docs.google.com/presentation/d/12irhwBNskk9Ofoz3UNHgOsd3hwYirDJGF23dBxGXV8o/edit?usp=sharing)
 
 ## 友だち追加してね！
 <a href="https://line.me/R/ti/p/%40kfl6500u">
