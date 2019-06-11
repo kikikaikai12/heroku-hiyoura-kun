@@ -5,7 +5,7 @@
 そこで「迷わずお店を選ぶ」というコンセプトを基にして「ひようら君」を作りました。
 
 ## 説明
-日吉駅の繁華街（通称：ひようら）にある、おすすめの飲食店を紹介してくれるLINE Bot
+日吉駅の繁華街（通称：ひようら）にある、おすすめの飲食店を紹介してくれるLINE Bot  
 スライドは[こちら](https://docs.google.com/presentation/d/12irhwBNskk9Ofoz3UNHgOsd3hwYirDJGF23dBxGXV8o/edit?usp=sharing)
 
 ## 友だち追加してね！
