@@ -35,8 +35,8 @@ class LinebotController < ApplicationController
 
       line_user_id = event['source']['userId']
       # get user profile
+      profile = get_name(line_user_id)
       unless User.find_by(line_user_id: line_user_id)
-        profile = get_name(line_user_id)
         user = User.new(name: profile, line_user_id: line_user_id)
         user.save
       end
