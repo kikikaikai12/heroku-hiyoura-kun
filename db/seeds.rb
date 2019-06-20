@@ -8,7 +8,7 @@
 
 require "csv"
 
-CSV.foreach("#{Rails.root.to_s}/1_shop.csv", encoding: 'UTF-8', headers: true) do |row|
+CSV.foreach("#{Rails.root.to_s}/csv/1_shop.csv", encoding: 'UTF-8', headers: true) do |row|
     shop = Shop.new(
         genre: row[0],
         shop_name: row[1],
@@ -31,7 +31,7 @@ CSV.foreach("#{Rails.root.to_s}/1_shop.csv", encoding: 'UTF-8', headers: true) d
     shop.save
 end
         
-CSV.foreach("#{Rails.root.to_s}/2_time.csv", encoding: 'UTF-8', headers: true) do |row|
+CSV.foreach("#{Rails.root.to_s}/csv/2_time.csv", encoding: 'UTF-8', headers: true) do |row|
 opening_hour = OpeningHour.new(
     shop_id: row[1],
     day_of_the_week: row[2],
@@ -43,7 +43,7 @@ opening_hour = OpeningHour.new(
     opening_hour.save
 end
         
-CSV.foreach("#{Rails.root.to_s}/3_category.csv", encoding: 'UTF-8', headers: true) do |row|
+CSV.foreach("#{Rails.root.to_s}/csv/3_category.csv", encoding: 'UTF-8', headers: true) do |row|
     category = Category.new(
         shop_id: row[1],
         feature_1: row[2],
