@@ -62,32 +62,6 @@ class LinebotController < ApplicationController
           shops = Shop.where(genre: "和食")
         when "おまかせ", "ランダム", "らんだむ", "完全ランダム", "完全おまかせ"
           shops = Shop.all
-        # 隠しコマンド
-        when "かいくんさん", "かい", "カイクンサン", "カイ", "kaikunsan", "kai", "open shell", "OpenShell", "おーぷんしぇる", "オープンシェル"
-          response = {
-            type: 'text',
-            text: "【隠しコマンド発動】 OpenShell\nhttps://soundcloud.com/open_shell"
-          }
-        when "セルジオ・メンデス", "セルジオメンデス", "せるじお・めんです", "せるじおめんです", "sergio mendes", "sergiomesdes", "Sergio Mendes", "SergioMesdes"
-          response = {
-            type: 'text',
-            text: "【隠しコマンド発動】 Sergio Mendes\n【Sergio Mendes】 https://soundcloud.com/open_shell/sergio-mendes-vem-magalenha-open-shell-break-remix20161030"
-          }
-        when "フォーフリーズ", "フォアフリース", "ふぉーふりーず", "ふぉあふりーず", "foe freeze", "ForFreeze"
-          response = {
-            type: 'text',
-            text: "【隠しコマンド発動】 For Freeze\n【Original】 https://soundcloud.com/open_shell\n【New Edition 2】 https://soundcloud.com/open_shell/for-freeze-new-edition-2"
-          }
-        when "男気", "アイス", "あいす", "ice", "おごれよ", "奢れよ"
-          response = {
-            type: 'text',
-            text: "【隠しコマンド発動】 それは不公平だ"
-          }
-        when "だから", "だ・か・ら", "ダカラ"
-          response = {
-            type: 'text',
-            text: "【隠しコマンド発動】 だからやめて"
-          }
         else
           if genre.include?("/")
             # ボタンのIDを取得
