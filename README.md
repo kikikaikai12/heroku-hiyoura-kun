@@ -60,6 +60,3 @@ Yesが押された分だけ出やすくなりました！
 ### ひようら君ですべて完結
 <img src="/public/img/readme/6.png">
 
-## 開発者
-[Kai Minemura](https://github.com/KaiMinemura)
-[Masato Nohara ](https://github.com//NoharaMasato)
